@@ -31,14 +31,12 @@ public class HomeWorkMath {
                 .stream()
                 .mapToInt(i -> i)
                 .average().orElseThrow(NoSuchElementException::new);
-
         System.out.println("Average-->  = "+average);
         return  average;
     }
 
     public static double findMedian(List<Integer> listOfIntegers){
         int size = listOfIntegers.size();
-
         double median = listOfIntegers
                 .stream()
                 .mapToInt(i-> i)
@@ -46,17 +44,15 @@ public class HomeWorkMath {
                 .skip((size-1)/2).limit(2-size%2).average().orElseThrow(NoSuchElementException::new);
         System.out.println("Median-->  = "+median);
         return median;
-
     }
 
     public static double findPercentile(List<Integer> listOfIntegers, Integer quantifier){
-
         double percentile = listOfIntegers.stream()
                 .mapToInt(i-> i)
                 .limit(quantifier)
                 .summaryStatistics()
                 .getAverage();
-        System.out.println("Percentile-->  = "+percentile);
+        System.out.println("Percentile-->  = "+percentile+"%");
         return percentile;
     }
 }

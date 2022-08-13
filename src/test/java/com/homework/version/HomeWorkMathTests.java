@@ -5,8 +5,6 @@ import java.util.Arrays;
 import static com.homework.version.HomeWorkMath.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
-
 public class HomeWorkMathTests {
     @Test
     public void givenListOfNumbersProvidesMin() {
@@ -30,6 +28,6 @@ public class HomeWorkMathTests {
 
     @Test
     public void givenListOfNumbersProvidesPercentile() {
-        assertThat(findPercentile(Arrays.asList(-1, 1, 2, 3, 100, 56, 7, 89, 10),9));
+        assertThat(findPercentile(Arrays.asList(-1, 1, 2, 3, 100, 56, 7, 89, 10),5));
     }
 }

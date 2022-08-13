@@ -1,4 +1,4 @@
-# HomeWork_Version
+# HomeWork Version Compare
 
 Util - 'compare versions'
 Implement a utility ( in Java). Spring with Gradle.

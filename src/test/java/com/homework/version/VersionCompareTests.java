@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class VersionCompareTests {
 
     @Test
-    public void givenVersionStrings_thenCompareVersions() {
+    public void givenVersionStringsThenCompareVersions() {
         assertTrue(VersionCompare.compareVersions("1.0.1", "1.1.2") < 0);
         assertTrue(VersionCompare.compareVersions("1.0.1", "1.10") < 0);
         assertTrue(VersionCompare.compareVersions("1.1.2", "1.0.1") > 0);

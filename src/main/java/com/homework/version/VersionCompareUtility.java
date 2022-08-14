@@ -1,6 +1,7 @@
 package com.homework.version;
 
-public class VersionCompare {
+public final class VersionCompareUtility {
+
     public static int compareVersions(String version1, String version2) {
         int comparisonResult = 0;
 
